@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="Airat_Khairutdinov">
+        <sqlFile
+                dbms="mysql"
+                encoding="utf8"
+                path="01-create-products.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+        <comment>Created Product tables</comment>
+    </changeSet>
+
+    <changeSet id="2" author="Airat_Khairutdinov">
+        <sqlFile
+                dbms="mysql"
+                encoding="utf8"
+                path="02-create-countries-and-states.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+        <comment>Created Countries and States</comment>
+    </changeSet>
+
+    <changeSet id="3" author="Airat_Khairutdinov">
+        <sqlFile
+                dbms="mysql"
+                encoding="utf8"
+                path="03-create-order-tables.sql"
+                relativeToChangelogFile="true"
+                splitStatements="true"
+                stripComments="true"/>
+        <comment>Created Order tables</comment>
+    </changeSet>
+
+</databaseChangeLog>
